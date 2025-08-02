@@ -11,6 +11,4 @@ resource "aws_vpc_peering_connection" "expense_peering" {
       Name = "${local.resource_name}-default"
     }
   )
-
-
 }

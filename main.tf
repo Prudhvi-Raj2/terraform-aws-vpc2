@@ -170,5 +170,4 @@ resource "aws_route_table_association" "database" {
   count = length(var.database_subnets_cidr)
   subnet_id = aws_subnet.database[count.index].id
   route_table_id = aws_route_table.database.id
-  
 }
